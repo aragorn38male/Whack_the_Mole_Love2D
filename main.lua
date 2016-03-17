@@ -29,6 +29,7 @@ function love.load()
   love.mouse.setCursor(cursor)
   bgImage = love.graphics.newImage("background.png")
   hole = love.graphics.newImage("hole.png") 
+  bgAudio = love.audio.newSource("BubbleBubble.mp3")
   
   table.insert(Moles, mole1)
   table.insert(Moles, mole2) 
@@ -37,6 +38,7 @@ function love.load()
   table.insert(Moles, mole5)
   table.insert(Moles, mole6)
   
+  love.audio.play(bgAudio)
 end
 
 
